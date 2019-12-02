@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+          crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+        {% if title %}
+            <title>{{ title }} – MCON 104 Term Project</title>
+        {% else %}
+            <title>MCON 104 Term Project </title>
+        {% endif %}
+    </head>
+
+    <body>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+        </nav>
+        <hr/>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+
+</html>
