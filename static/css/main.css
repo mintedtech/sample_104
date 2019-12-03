@@ -11,6 +11,10 @@ body {
     margin-left: var(--medium-margin);
 }
 
+a {
+    margin-left: var(--medium-margin);
+}
+
 h3, nav {
     margin-top: var(--large-margin);
     margin-bottom: var(--large-margin);
