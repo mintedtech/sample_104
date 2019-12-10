@@ -8,6 +8,8 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
           integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
           crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
     {% if title %}
         <title>{{ title }} – MCON 104 Term Project</title>
@@ -17,14 +19,23 @@
 </head>
 
 <body>
-<nav>
-    <img src="../static/favicon.ico" alt="Logo"/>
-    <a href="{{ url_for('index') }}">Home</a>
-</nav>
-<hr/>
+    <nav>
+        <img src="../static/favicon.ico" alt="Logo"/>
+        <a href="{{ url_for('index') }}">Home</a>
+    </nav>
+    <hr/>
 
-{% block content %}
-{% endblock %}
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <hr/>
+        <span style="visibility: hidden">Takes up space</span>
+        <a href="http://las.touro.edu" target="_blank">LAS</a>
+        <a href="http://lcw.touro.edu" target="_blank" style="display: none">LCM</a>
+        <a href="http://lcw.touro.edu" target="_blank">LCW</a>
+    </footer>
+
 </body>
 
 </html>

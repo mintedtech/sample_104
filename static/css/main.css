@@ -6,17 +6,45 @@
 
 /* Styles */
 body {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    font-family: 'Lucida Grande', 'Verdana', sans-serif;
     background-color: aliceblue;
     margin-left: var(--medium-margin);
 }
 
-a {
+nav a {
+    border: 3px dotted deeppink;
+    padding: 5px;
+    vertical-align: bottom;
     margin-left: var(--medium-margin);
 }
 
 h3, nav {
     margin-top: var(--large-margin);
     margin-bottom: var(--large-margin);
+    text-transform: capitalize;
+}
+
+footer a {
+    text-decoration: overline;
+}
+
+img
+{
+    max-height: 80px;
+}
+
+h3 {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 4px 4px 4px #999999;
     color: deeppink;
+}
+
+#leading {
+    line-height: 400%;
+    word-spacing: 1em;
+    letter-spacing: 4px;
 }
