@@ -1,5 +1,6 @@
 /* Variables  */
 :root {
+    --small-margin: 5px;
     --medium-margin: 10px;
     --large-margin: 18px
 }
@@ -11,11 +12,15 @@ body {
     margin-left: var(--medium-margin);
 }
 
-nav a {
-    border: 3px dotted deeppink;
-    padding: 5px;
-    vertical-align: bottom;
+nav li {
+    vertical-align: center;
     margin-left: var(--medium-margin);
+    display: inline;
+}
+
+nav a {
+    padding: var(--medium-margin);
+    border: 3px dotted deeppink;
 }
 
 h3, nav {
@@ -28,9 +33,9 @@ footer a {
     text-decoration: overline;
 }
 
-img
-{
+img {
     max-height: 80px;
+    margin-bottom: var(--small-margin);
 }
 
 h3 {
